@@ -15,8 +15,13 @@ function renderNavbar() {
 	return header;
 }
 
+function renderAside() {
+    const section = createElementWithClass("section", "aside");
+    return section;
+}
+
 function createLink(type, classList, src, text) {
-	const element = document.createElement("a");
+	const element = document.createElement(type);
 	element.classList.add(classList);
 	element.src = src;
 	element.textContent = `${text}`;
@@ -39,4 +44,4 @@ function createTextElement(type, classList, text) {
 	return element;
 }
 
-export { renderNavbar };
+export { renderNavbar, renderAside };

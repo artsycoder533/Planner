@@ -24,7 +24,6 @@ I am currently following The Odin Project's Full Stack Javascript Curriculum.
 We were tasked with implementing a Todo List with added features and functionality.
 
 
-
 ### Screenshot
 
 - Mobile Screenshot [Mobile Screenshot]()
