@@ -21,6 +21,11 @@ function renderAside() {
 }
 
 function renderContainer() {
+    const section = createElementWithClass("section", "container");
+    return section;
+}
+
+function renderContent() {
     const section = createElementWithClass("section", "content");
     return section;
 }
@@ -49,4 +54,4 @@ function createTextElement(type, classList, text) {
 	return element;
 }
 
-export { renderContainer, renderNavbar, renderAside };
+export { renderContainer, renderContent, renderNavbar, renderAside };
