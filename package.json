@@ -1,0 +1,24 @@
+{
+  "name": "planner",
+  "version": "1.0.0",
+  "description": "This is my solution to The Odin Project's [Todo List](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/todo-list).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artsycoder533/Planner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artsycoder533/Planner/issues"
+  },
+  "homepage": "https://github.com/artsycoder533/Planner#readme",
+  "devDependencies": {
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
