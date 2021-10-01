@@ -1,9 +1,12 @@
 import "./styles/style.scss";
 import Pic from "./assets/pic.jpg";
-import { renderNavbar, renderAside } from "./scripts/createUI.js";
+import { renderContainer, renderNavbar, renderAside } from "./scripts/createUI.js";
 
 
 //window.addEventListener("DOMContentLoaded", renderNavbar());
 
 document.body.appendChild(renderNavbar());
-document.body.appendChild(renderAside());
+const container = renderContainer();
+document.body.appendChild(container);
+
+container.appendChild(renderAside());

@@ -20,6 +20,11 @@ function renderAside() {
     return section;
 }
 
+function renderContainer() {
+    const section = createElementWithClass("section", "content");
+    return section;
+}
+
 function createLink(type, classList, src, text) {
 	const element = document.createElement(type);
 	element.classList.add(classList);
@@ -44,4 +49,4 @@ function createTextElement(type, classList, text) {
 	return element;
 }
 
-export { renderNavbar, renderAside };
+export { renderContainer, renderNavbar, renderAside };
