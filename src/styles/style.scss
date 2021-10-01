@@ -1,0 +1,12 @@
+$background-color: darkgray;
+
+body {
+    background-color: $background-color;
+    color: white;
+}
+
+.header {
+    color: yellow;
+    text-transform: uppercase;
+    text-decoration: line-through;
+}

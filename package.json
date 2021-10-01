@@ -1,24 +1,34 @@
 {
-  "name": "planner",
-  "version": "1.0.0",
-  "description": "This is my solution to The Odin Project's [Todo List](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/todo-list).",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/artsycoder533/Planner.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/artsycoder533/Planner/issues"
-  },
-  "homepage": "https://github.com/artsycoder533/Planner#readme",
-  "devDependencies": {
-    "webpack": "^5.55.1",
-    "webpack-cli": "^4.8.0"
-  }
+	"name": "planner",
+	"version": "1.0.0",
+	"description": "This is my solution to The Odin Project's [Todo List](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/todo-list).",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"compile:sass": "sass --watch dist",
+		"start": "webpack serve --open",
+		"build": "webpack --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/artsycoder533/Planner.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/artsycoder533/Planner/issues"
+	},
+	"homepage": "https://github.com/artsycoder533/Planner#readme",
+	"devDependencies": {
+		"css-loader": "^6.3.0",
+		"html-webpack-plugin": "^5.3.2",
+		"mini-css-extract-plugin": "^2.3.0",
+		"sass": "^1.42.1",
+		"sass-loader": "^12.1.0",
+		"style-loader": "^3.3.0",
+		"webpack": "^5.55.1",
+		"webpack-cli": "^4.8.0",
+		"webpack-dev-server": "^4.3.0"
+	}
 }
