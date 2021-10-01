@@ -1,6 +1,6 @@
 import "./styles/style.scss";
 import Pic from "./assets/pic.jpg";
-import { renderContainer, renderContent, renderNavbar, renderAside } from "./scripts/createUI.js";
+import { renderContainer, renderContent, renderNavbar, renderAside } from "./scripts/renderUI";
 
 
 //window.addEventListener("DOMContentLoaded", renderNavbar());
