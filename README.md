@@ -32,8 +32,8 @@ We were tasked with implementing a Todo List with added features and functionali
 
 ### Links
 
-- Solution URL: [https://github.com/artsycoder533/tictactoe.git]()
-- Live Site URL: [https://artsycoder533.github.io/tictactoe/]()
+- Solution URL: []()
+- Live Site URL: []()
 
 ## My process
 
@@ -53,9 +53,7 @@ We were tasked with implementing a Todo List with added features and functionali
 ### Continued development
 
 
-
 ### Useful Resources
-
 
 
 ## Author
