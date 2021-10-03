@@ -7,6 +7,7 @@ function renderNavbar() {
 	const navText = createTextElement("h1", "nav__text", "Planner");
     const navLinks = createElementWithClass("ul", "nav__links");
     const button = createTextElement("button", "nav__btn", "Add");
+    button.setAttribute("id", "add");
 	const li = createElement("li");
 	const navLink = createLink("a", "nav__link", "index.html", "Home");
 	navHeader.appendChild(navText);
