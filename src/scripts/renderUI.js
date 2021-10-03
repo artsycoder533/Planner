@@ -5,12 +5,13 @@ function renderNavbar() {
 	const nav = createElementWithClass("nav", "nav");
 	const navHeader = createElementWithClass("div", "nav__header");
 	const navText = createTextElement("h1", "nav__text", "Planner");
-	const navLinks = createElementWithClass("ul", "nav__links");
+    const navLinks = createElementWithClass("ul", "nav__links");
+    const button = createTextElement("button", "nav__btn", "Add");
 	const li = createElement("li");
 	const navLink = createLink("a", "nav__link", "index.html", "Home");
 	navHeader.appendChild(navText);
 	nav.appendChild(navHeader);
-	navLinks.appendChild(li);
+	navLinks.appendChild(button);
 	li.appendChild(navLink);
 	nav.appendChild(navLinks);
 	header.appendChild(nav);
