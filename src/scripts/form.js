@@ -2,7 +2,7 @@ import { createElementWithClass, createTextElement} from "./createUI.js";
 
 function renderForm() {
     const form = createElementWithClass("form", "modal__form");
-    const closeBtn = createElementWithClass("button", "form__closeBtn");
+    const closeBtn = createTextElement("button", "form__closeBtn","X");
     const titleLabel = createFormElement("label", "for", "title", "form__label", "Title:");
     const titleInput = createFormElement("input", "type", "text", "form__input");
     const descriptionLabel = createFormElement("label", "for", "description", "form__label", "Description");

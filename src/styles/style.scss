@@ -98,6 +98,31 @@ header {
         width: 90vw;
         padding: 2rem;
         background: snow;
+
+        .modal__form {
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            width: 90vw;
+            color: black;
+            
+            .form__closeBtn {
+                background: transparent;
+                border: none;
+                width: 100%;
+                text-align: right;
+                cursor: pointer;
+                color: red;
+                font-weight: bold;
+
+                    &:hover {
+                        font-size: 1.5rem;
+                    }
+
+                
+            }
+        }
     }
 }
 
