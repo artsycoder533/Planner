@@ -21,6 +21,11 @@ function renderNavbar() {
 
 function renderAside() {
 	const section = createElementWithClass("section", "aside");
+	const article = createElementWithClass("article", "aside__projects");
+	const h2 = createTextElement("h2", "aside__label", "Projects");
+	const ul = createElementWithClass("ul", "aside__list");
+	article.append(h2, ul);
+	section.appendChild(article);
 	return section;
 }
 
@@ -34,4 +39,14 @@ function renderContent() {
 	return section;
 }
 
-export { renderContainer, renderContent, renderNavbar, renderAside };
+function renderTodo(title) {
+	const parent = document.querySelector(".aside__list");
+	const element = createTextElement("li", "todo__item", title);
+	const editBtn = createTextElement("button", "todo__editBtn", "Edit");
+	const deleteBtn = createTextElement("button", "todo__deletebtn", "Delete");
+	element.append(editBtn, deleteBtn);
+	parent.appendChild(element);
+	return parent;
+}
+
+export { renderContainer, renderContent, renderNavbar, renderAside, renderTodo };

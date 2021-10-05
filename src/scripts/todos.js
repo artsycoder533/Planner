@@ -1,9 +1,10 @@
 class Todos {
-    constructor(title, description, dueDate, priority, id) {
+    constructor(title, description, dueDate, priority, project, id) {
         this.title = title;
         this.description = description;
         this.dueDate = dueDate;
         this.priority = priority;
+        this.project = project;
         this.id = id;
     }
 
@@ -52,4 +53,6 @@ class Todos {
     }
 }
 
-const todo = new Todo("finish portoflio", "finish personal portfolio and upload to Github",);
+//const todo = new Todo("finish portoflio", "finish personal portfolio and upload to Github");
+
+export { Todos };

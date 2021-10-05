@@ -1,3 +1,6 @@
+import { Todos } from "./todos.js";
+import { renderAside, renderTodo } from "./renderUI";
+
 function addEvents() {
     const addBtn = document.getElementById("add");
     const modal = document.querySelector(".modal");
@@ -15,7 +18,7 @@ function addEvents() {
     createTodo.addEventListener("click", (e) => {
         e.preventDefault();
         getFormInput();
-        
+        modal.classList.remove("show");
     });
 }
 
@@ -25,7 +28,20 @@ function getFormInput() {
     const dueDate = document.getElementById("dueDate").value;
     const priority = document.getElementById("priority").value;
     const project = document.getElementById("project").value;
-    console.table(title, description, dueDate, priority, project);
+   // console.table(title, description, dueDate, priority, project);
+    const id = Math.random();
+    const todo = new Todos(title, description, dueDate, priority, project, id);
+    renderTodo(title);
+    clearForm(title, description, dueDate, priority, project);
+}
+
+function clearForm(title, description, dueDate, priority,project, id) {
+    document.getElementById("title").value = "";
+    description = "";
+    dueDate = "";
+    priority = "";
+    project = "";
+    id = "";
 }
 
 export { addEvents };
