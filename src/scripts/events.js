@@ -14,10 +14,18 @@ function addEvents() {
 
     createTodo.addEventListener("click", (e) => {
         e.preventDefault();
-
+        getFormInput();
+        
     });
 }
 
-
+function getFormInput() {
+    const title = document.getElementById("title").value;
+    const description = document.getElementById("description").value;
+    const dueDate = document.getElementById("dueDate").value;
+    const priority = document.getElementById("priority").value;
+    const project = document.getElementById("project").value;
+    console.table(title, description, dueDate, priority, project);
+}
 
 export { addEvents };
